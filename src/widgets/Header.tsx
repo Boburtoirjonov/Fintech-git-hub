@@ -1,8 +1,15 @@
-
+import { NavLink } from "react-router"
 
 function Header() {
   return (
-    <div>Header</div>
+    <div>
+        <h1>Logo</h1>
+        <ul>
+            <NavLink to={"/demo"}>
+                Demo
+            </NavLink>
+        </ul>
+    </div>
   )
 }
 
