@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import MainLoyout from "../widgets/MainLoyout";
-import Home from "../pages/Home";
-import Demo from "../pages/Demo";
+import { Demo, Home } from "../pages/IndexLazy";
+
 
 export const router = createBrowserRouter([
     {
