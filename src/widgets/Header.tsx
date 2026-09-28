@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"
+import { NavLink } from "react-router";
 
 function Header() {
   return (
@@ -22,6 +22,20 @@ function Header() {
                 }
               >
                 Demo
+              </NavLink>
+            </li>
+             <li>
+              <NavLink
+                to="/login"
+                className={({ isActive }) =>
+                  `rounded-lg px-4 py-2 font-medium transition-colors ${
+                    isActive
+                      ? "bg-blue-600 text-white"
+                      : "text-gray-300 hover:bg-gray-800 hover:text-white"
+                  }`
+                }
+              >
+                Login
               </NavLink>
             </li>
           </ul>

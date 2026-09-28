@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import MainLoyout from "../widgets/MainLoyout";
-import { Demo, Home } from "../pages/IndexLazy";
+import { Demo, Home, Login } from "../pages/IndexLazy";
 
 
 export const router = createBrowserRouter([
@@ -15,6 +15,10 @@ export const router = createBrowserRouter([
             {
                 path: "/demo",
                 element: <Demo/>
+            },
+            {
+                path: "/login",
+                element: <Login/>
             }
         ]
     }
